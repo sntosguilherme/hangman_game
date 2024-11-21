@@ -7,14 +7,16 @@ namespace hangman_game
     {
         static void Main(string[] args)
         {
-            bool victory = false;
-            
-            string word = "";
 
+        //variables and lists
+
+            bool victory = false;
+            string word = "";
             int maxLives = 6;
             int currentLives = maxLives;
-            
             List<char> guessedLetters = new List<char>();
+
+        //start of the program
 
             Console.WriteLine("Welcome to the hangman game!");
             RandomWord();
@@ -62,7 +64,10 @@ namespace hangman_game
                 Console.WriteLine(HangMan());
             }
             
-
+            // end of the program.
+            
+            //functions.
+   
             void RandomWord()
             {
                 string[] wordsToGuess = new string[] 
